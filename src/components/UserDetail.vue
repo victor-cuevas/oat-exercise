@@ -11,11 +11,11 @@
                     v-bind:src="item.picture"
             >
             </v-img>
-            <v-card-subtitle class="pb-0">{{ item.lastName }} {{ item.firstName }}</v-card-subtitle>
+            <v-card-subtitle class="pb-0">{{ item.lastName | capitalize }} {{ item.firstName | capitalize }}</v-card-subtitle>
             <v-card-text class="text--primary">
                 <div>{{ item.address }}</div>
                 <div>{{ item.email }}</div>
-                <div>{{ item.gender }}</div>
+                <div>{{ item.gender | capitalize }}</div>
             </v-card-text>
         </v-card>
     </v-col>

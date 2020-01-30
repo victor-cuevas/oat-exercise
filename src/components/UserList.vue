@@ -16,8 +16,8 @@
                         </thead>
                         <tbody>
                         <tr v-for="(item, index) in data" :key="index" v-on:click="getUserById(item.userId)">
-                            <td>{{ item.lastName }}</td>
-                            <td>{{ item.firstName }}</td>
+                            <td>{{ item.lastName | capitalize }}</td>
+                            <td>{{ item.firstName | capitalize }}</td>
                         </tr>
                         </tbody>
                     </template>
